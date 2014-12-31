@@ -7,7 +7,12 @@ installpkg <- function(pkg){
         require(pkg,character.only=T)
 }
 
-installpkg('seqinr')
+installpkg("DiffBind")
 
-library("ggplot2")
+source("http://bioconductor.org/biocLite.R")
+biocLite("GenomicAlignments")
+
+
+
+library("GenomicAlignments")
 choosebank("genbank")
